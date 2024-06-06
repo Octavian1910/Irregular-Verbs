@@ -3,6 +3,7 @@ body {
     background-color: black;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color:#3d3c3c;
 }
 
 .navbar {
@@ -18,12 +19,26 @@ body {
     z-index: 1000;
 }
 
+.random_button
+{
+    border-radius: 15px 50px;
+    border: none;
+    font-size: 12px; 
+    font-weight: bold;
+    background-color: #2196F3;
+    color: white;
+    width: 35%; 
+    height: 50px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
 .table {
     border: 1px solid black;
     font-size: 16px; 
     border-collapse: collapse;
     width: 100%;
-    margin-top: 5%; 
+    margin-top: 6%; 
     background-color: #3d3c3c;
 }
 
@@ -35,13 +50,13 @@ body {
 }
 
 .dice {
-    border-radius: 50%;
+    border-radius: 15px 50px;
     border: none;
-    font-size: 24px; 
+    font-size: 15px; 
     font-weight: bold;
     background-color: #2196F3;
     color: white;
-    width: 50px; 
+    width: 30%; 
     height: 50px;
     transition: background-color 0.3s ease;
     cursor: pointer;
@@ -94,6 +109,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     width: 80%; 
+    height:60%;
 }
 
 .popup input {
@@ -105,6 +121,7 @@ body {
 
 .popup1, .popup2, .popup3, .popup4 {
     margin-bottom: 2%; 
+    margin-top:50px;
 }
 
 .popup1, .popup2, .popup3 > button {
@@ -148,4 +165,9 @@ body {
 .incorrect {
     background-color: #f44336;
     color: white;
+}
+
+.text1_size
+{
+    font-size:20px;
 }

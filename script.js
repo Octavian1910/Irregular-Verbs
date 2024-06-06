@@ -214,7 +214,7 @@ window.onload = function() {
     const Dice = document.getElementById("dicer");
 
     Dice.addEventListener('click', function() {
-        
+    Dice.style.visibility = "hidden";
     navbar_blur.style.filter = "blur(8px)";
     table_blur.style.filter = "blur(8px)";
     console.log("Button clicked!");
@@ -250,11 +250,12 @@ function showPopup() {
     popup4.classList.add("popup4");
 
     var text1 = document.createElement("span");
-    text1.textContent = "Click the next button to start the quiz";
+    text1.textContent = "";
+    text1.classList.add("text1_size");
 
     var random_button = document.createElement("button");
-    random_button.innerHTML = "&#9858;";
-    random_button.classList.add("dice");
+    random_button.innerHTML = "Click here for a random verb &#9858;";
+    random_button.classList.add("random_button");
 
     var answer=document.createElement("span");
     answer.textContent = "";
@@ -376,6 +377,8 @@ function showPopup() {
 
     closeButton.classList.add("close")
     closeButton.addEventListener("click", function() {
+        const Dice = document.getElementById("dicer");
+        Dice.style.visibility = "visible";
         navbar_blur.style.filter = "blur(0px)";
         table_blur.style.filter = "blur(0px)";
         document.body.removeChild(popup);
