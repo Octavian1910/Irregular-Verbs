@@ -267,7 +267,7 @@ function showPopup() {
         randomNumber = Math.floor(Math.random() * verbs.length);
         randomVerb = verbs[randomNumber];
 
-        text1.textContent = "Scrieti cele 3 forme ale verbului "+randomVerb.translate;
+        text1.textContent = "Fill in for: "+randomVerb.translate;
         //reset buttons
         reset(input1,input2,input3);
         input1.value="";
@@ -345,7 +345,7 @@ function showPopup() {
   
     
     // Crează inputurile și butonul și aplică clasele corespunzătoare
-    var input1 = document.createElement("input");
+   var input1 = document.createElement("input");
     input1.setAttribute("type", "text");
     input1.setAttribute("placeholder", "Present");
     input1.addEventListener('keydown', function(event) {

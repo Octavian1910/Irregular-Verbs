@@ -16,6 +16,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height:9%;
     z-index: 1000;
 }
 
@@ -38,8 +39,17 @@ body {
     font-size: 16px; 
     border-collapse: collapse;
     width: 100%;
-    margin-top: 6%; 
+    margin-top: 5%; 
     background-color: #3d3c3c;
+}
+
+@media (max-width: 768px) {
+    .table {
+        margin-top: 18%; 
+    }
+    .navbar {
+        height:12%;
+    }
 }
 
 .border {
@@ -105,10 +115,10 @@ body {
     background-color: black;
     color: white;
     padding: 2%; 
-    border-radius: 8px;
+    border-radius: 15px 50px 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    width: 80%; 
+    width: 70%; 
     height:60%;
 }
 
@@ -122,17 +132,27 @@ body {
 .popup1, .popup2, .popup3, .popup4 {
     margin-bottom: 2%; 
     margin-top:50px;
+
+}
+
+.popup4
+{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    
 }
 
 .popup1, .popup2, .popup3 > button {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    
 }
 
 .popup1 > span, .popup2 > input, .popup4 > button {
     flex: 1;
     margin-right: 2%; 
+    height:50px;
+    
 }
 
 .popup4 > button {
@@ -146,6 +166,7 @@ body {
     padding: 10px 20px; 
     border-radius: 4px;
     cursor: pointer;
+    width:35%;
 }
 
 .verify {
@@ -155,6 +176,7 @@ body {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    width:35%;
 }
 
 .correct {
