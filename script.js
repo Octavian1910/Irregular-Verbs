@@ -347,10 +347,20 @@ function showPopup() {
     var input1 = document.createElement("input");
     input1.setAttribute("type", "text");
     input1.setAttribute("placeholder", "Present");
+    input1.addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+             input2.focus();
+        }
+    });
 
     var input2 = document.createElement("input");
     input2.setAttribute("type", "text");
     input2.setAttribute("placeholder", "PastSimple");
+    input2.addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+             input3.focus();
+        }
+    });
 
     var input3 = document.createElement("input");
     input3.setAttribute("type", "text");
