@@ -347,7 +347,7 @@ function showPopup() {
     // Crează inputurile și butonul și aplică clasele corespunzătoare
    var input1 = document.createElement("input");
     input1.setAttribute("type", "text");
-    input1.setAttribute("placeholder", "Present");
+    input1.setAttribute("placeholder", "Infinitive");
     input1.addEventListener('keydown', function(event) {
         if (event.key === "Enter") {
              input2.focus();
